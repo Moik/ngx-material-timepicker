@@ -4,7 +4,6 @@ import { TimeFormat } from '../models/time-format.enum';
 import { DisabledTimeConfig } from '../models/disabled-time-config.interface';
 import { DateTime } from 'luxon';
 
-export namespace TimepickerTime {
 
     export function getHours(format: number): ClockFaceTime[] {
         return Array(format).fill(1).map((v, i) => {
@@ -61,4 +60,3 @@ export namespace TimepickerTime {
         }
         return minutes;
     }
-}
